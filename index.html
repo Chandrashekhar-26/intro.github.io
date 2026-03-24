@@ -1,9 +1,273 @@
-<html>
-  <head>
-    <link href="style.css" rel="stylesheet" />
-  </head>
-  <body>
-      <h1 class="greeting">Hello Everyone</h1>
-      <h2 class="intro">I am shekhar</h2>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandrashekhar Kumar — Technical Architect & AI/ML Specialist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Grid lines -->
+  <div class="grid-lines">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>CK<span class="logo-bracket">]</span>
+    </div>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#connect" class="nav-link">Connect</a>
+    </div>
+    <div class="nav-badge">
+      <span class="status-dot"></span> Open to collaborate
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-eyebrow">
+      <span class="mono">Technical Architect · AI/ML Specialist</span>
+    </div>
+
+    <h1 class="hero-name">
+      <span class="name-line reveal" data-delay="0">Chandra</span>
+      <span class="name-line reveal italic" data-delay="100">shekhar</span>
+      <span class="name-line reveal" data-delay="200">Kumar<span class="dot">.</span></span>
+    </h1>
+
+    <div class="hero-tagline reveal" data-delay="400">
+      Designing intelligent systems at the intersection of<br />
+      <em>Architecture, AI, and Real-World Impact.</em>
+    </div>
+
+    <div class="hero-cta reveal" data-delay="600">
+      <a href="https://www.linkedin.com/in/chandrashekhar-kumar" target="_blank" class="btn btn-primary">
+        <span>LinkedIn Profile</span>
+        <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="mailto:kumarchandrashekhar96@gmail.com" class="btn btn-ghost">
+        <span>Get in Touch</span>
+      </a>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span class="mono small">scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- Floating chips -->
+    <div class="floating-chips">
+      <div class="chip chip-1">AI/ML</div>
+      <div class="chip chip-2">LLMs</div>
+      <div class="chip chip-3">MLOps</div>
+      <div class="chip chip-4">AWS</div>
+      <div class="chip chip-5">ISO 42001</div>
+      <div class="chip chip-6">NLP</div>
+    </div>
+
+    <!-- Diagonal accent -->
+    <div class="hero-accent"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="section-label"><span class="mono">01 — About</span></div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="section-title">Building the <br /><em>brain</em> behind <br />the machine.</h2>
+      </div>
+      <div class="about-right">
+        <p class="about-text">
+          I'm a <strong>Technical Architect</strong> with 6+ years at L&Q Technologies, specializing in AI, ML, LLMs, MLOps, NLP, and Computer Vision — backed by an MTech in AI/ML from <strong>BITS Pilani</strong>.
+        </p>
+        <p class="about-text">
+          I design robust, scalable architectures that bridge cutting-edge research with production systems — from intelligent pipelines to cloud-native solutions and full-stack platforms.
+        </p>
+        <div class="about-cert">
+          <div class="cert-icon">✦</div>
+          <div>
+            <div class="cert-title">ISO/IEC 42001:2023 Certified</div>
+            <div class="cert-sub mono">AI Management System Lead Implementer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section section" id="skills">
+    <div class="section-label"><span class="mono">02 — Skills</span></div>
+    <h2 class="section-title centered">What I work with</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card" data-index="0">
+        <div class="skill-card-top">
+          <span class="skill-icon">⬡</span>
+          <span class="skill-num mono">01</span>
+        </div>
+        <h3>AI / ML</h3>
+        <ul>
+          <li>Large Language Models</li>
+          <li>Computer Vision</li>
+          <li>NLP & Speech</li>
+          <li>MLOps Pipelines</li>
+        </ul>
+      </div>
+
+      <div class="skill-card" data-index="1">
+        <div class="skill-card-top">
+          <span class="skill-icon">◈</span>
+          <span class="skill-num mono">02</span>
+        </div>
+        <h3>Architecture</h3>
+        <ul>
+          <li>System Design</li>
+          <li>Cloud-Native (AWS)</li>
+          <li>Microservices</li>
+          <li>DevOps & CI/CD</li>
+        </ul>
+      </div>
+
+      <div class="skill-card" data-index="2">
+        <div class="skill-card-top">
+          <span class="skill-icon">◎</span>
+          <span class="skill-num mono">03</span>
+        </div>
+        <h3>Full Stack</h3>
+        <ul>
+          <li>Python · Node.js</li>
+          <li>Angular · React</li>
+          <li>Java · Spring Boot</li>
+          <li>REST & GraphQL APIs</li>
+        </ul>
+      </div>
+
+      <div class="skill-card" data-index="3">
+        <div class="skill-card-top">
+          <span class="skill-icon">⬙</span>
+          <span class="skill-num mono">04</span>
+        </div>
+        <h3>Governance</h3>
+        <ul>
+          <li>AI Policy & Regulation</li>
+          <li>ISO 42001 Standards</li>
+          <li>Responsible AI</li>
+          <li>Team Mentorship</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
+  <section class="experience section" id="experience">
+    <div class="section-label"><span class="mono">03 — Experience</span></div>
+    <h2 class="section-title">The journey so far</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item current">
+        <div class="timeline-dot"></div>
+        <div class="timeline-connector"></div>
+        <div class="timeline-content">
+          <div class="timeline-meta mono">Jun 2023 — Present · 2y 10m</div>
+          <div class="timeline-role">Technical Architect</div>
+          <div class="timeline-company">L&Q Technologies Pvt. Ltd.</div>
+          <p>Leading architectural decisions for AI/ML-driven products, designing scalable cloud-native systems, and guiding teams to adopt engineering best practices.</p>
+          <span class="timeline-badge current-badge">Current</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-connector"></div>
+        <div class="timeline-content">
+          <div class="timeline-meta mono">Jan 2022 — May 2023 · 1y 5m</div>
+          <div class="timeline-role">Senior Software Engineer</div>
+          <div class="timeline-company">L&Q Technologies Pvt. Ltd.</div>
+          <p>Built and optimized intelligent software systems with a focus on ML integration, performance engineering, and full-stack delivery.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-meta mono">Dec 2019 — Jan 2022 · 2y 2m</div>
+          <div class="timeline-role">Software Engineer</div>
+          <div class="timeline-company">L&Q Technologies Pvt. Ltd.</div>
+          <p>Developed core product features across full-stack applications and contributed to the evolution of internal AI/ML tooling.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Education strip -->
+    <div class="edu-strip">
+      <div class="edu-item">
+        <span class="edu-icon mono">◻</span>
+        <div>
+          <div class="edu-degree">MTech — AI/ML</div>
+          <div class="edu-school mono">BITS Pilani · 2024–2026</div>
+        </div>
+      </div>
+      <div class="edu-divider"></div>
+      <div class="edu-item">
+        <span class="edu-icon mono">◻</span>
+        <div>
+          <div class="edu-degree">BTech — CSE</div>
+          <div class="edu-school mono">KIST Bhubaneswar · 2015–2019</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section class="connect section" id="connect">
+    <div class="section-label"><span class="mono">04 — Connect</span></div>
+    <div class="connect-inner">
+      <h2 class="connect-title">
+        Let's build something<br />
+        <em>remarkable</em> together.
+      </h2>
+      <p class="connect-sub">Open to collaborations, consulting, and conversations around AI architecture.</p>
+      <div class="connect-links">
+        <a href="mailto:kumarchandrashekhar96@gmail.com" class="connect-card">
+          <span class="connect-card-label mono">Email</span>
+          <span class="connect-card-value">kumarchandrashekhar96@gmail.com</span>
+          <span class="connect-arrow">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/chandrashekhar-kumar" target="_blank" class="connect-card">
+          <span class="connect-card-label mono">LinkedIn</span>
+          <span class="connect-card-value">linkedin.com/in/chandrashekhar-kumar</span>
+          <span class="connect-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="mono small">© 2025 Chandrashekhar Kumar</span>
+    <span class="mono small">Bengaluru, India</span>
+    <span class="mono small">Built with intention.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
