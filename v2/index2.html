@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandrashekhar Kumar — AI Architect</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300;1,9..144,700&family=Azeret+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cur" id="cur"></div>
+
+  <!-- Canvas for animated mesh background -->
+  <canvas id="mesh-canvas"></canvas>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-text">CK</span>
+        <div class="logo-line"></div>
+        <span class="logo-sub mono">Technical Architect</span>
+      </div>
+
+      <nav class="nav-items">
+        <a href="#work" class="nav-a">Work</a>
+        <a href="#stack" class="nav-a">Stack</a>
+        <a href="#timeline" class="nav-a">Journey</a>
+        <a href="#contact" class="nav-a">Contact</a>
+      </nav>
+
+      <div class="header-pill">
+        <span class="pill-dot"></span>
+        <span class="mono">Bengaluru, IND</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+
+    <!-- Big diagonal red band -->
+    <div class="hero-band"></div>
+
+    <div class="hero-layout">
+
+      <!-- LEFT column -->
+      <div class="hero-left">
+        <div class="hero-badge fade-seq" data-seq="0">
+          <span class="mono small">ISO/IEC 42001 · AIML Lead Implementer</span>
+        </div>
+
+        <h1 class="hero-h1">
+          <span class="h1-word fade-seq" data-seq="1">CHAN</span>
+          <span class="h1-word serif fade-seq" data-seq="2">dra</span>
+          <span class="h1-word fade-seq" data-seq="3">SHEKHAR</span>
+          <span class="h1-word accent-word fade-seq" data-seq="4">KUMAR</span>
+        </h1>
+
+        <div class="hero-descriptor fade-seq" data-seq="5">
+          <div class="descriptor-line"></div>
+          <p>AI/ML Specialist &amp; System Architect designing the future of intelligent infrastructure — one elegant system at a time.</p>
+        </div>
+
+        <div class="hero-actions fade-seq" data-seq="6">
+          <a href="https://www.linkedin.com/in/chandrashekhar-kumar" target="_blank" class="btn-red">
+            View Profile <span class="btn-arrow">↗</span>
+          </a>
+          <a href="mailto:kumarchandrashekhar96@gmail.com" class="btn-outline">
+            Email Me
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT column — decorative stat block -->
+      <div class="hero-right fade-seq" data-seq="3">
+        <div class="stat-block">
+          <div class="stat-item">
+            <div class="stat-num">6<span class="stat-plus">+</span></div>
+            <div class="stat-label mono">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">3</div>
+            <div class="stat-label mono">Roles Held</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">1</div>
+            <div class="stat-label mono">ISO Certification</div>
+          </div>
+          <div class="stat-item wide">
+            <div class="stat-num large">AI ∞ ML</div>
+            <div class="stat-label mono">Primary Domain</div>
+          </div>
+        </div>
+
+        <div class="company-badge">
+          <span class="mono tiny">Currently at</span>
+          <span class="company-name">L&amp;Q Technologies</span>
+          <span class="company-role mono">Technical Architect</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll ticker -->
+    <div class="ticker-wrap">
+      <div class="ticker-inner" id="ticker">
+        <span>AI Architecture</span>
+        <span class="ticker-dot">◆</span>
+        <span>LLMs</span>
+        <span class="ticker-dot">◆</span>
+        <span>MLOps</span>
+        <span class="ticker-dot">◆</span>
+        <span>Cloud Native</span>
+        <span class="ticker-dot">◆</span>
+        <span>NLP</span>
+        <span class="ticker-dot">◆</span>
+        <span>Computer Vision</span>
+        <span class="ticker-dot">◆</span>
+        <span>AWS</span>
+        <span class="ticker-dot">◆</span>
+        <span>Python · Node.js · Java</span>
+        <span class="ticker-dot">◆</span>
+        <span>Spring Boot</span>
+        <span class="ticker-dot">◆</span>
+        <span>Angular</span>
+        <span class="ticker-dot">◆</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about-sec" id="work">
+    <div class="about-inner">
+
+      <div class="about-tag mono reveal">About</div>
+
+      <div class="about-grid">
+        <div class="about-heading-col">
+          <h2 class="about-h2 reveal">
+            Building the<br />
+            <em>intelligence</em><br />
+            layer.
+          </h2>
+          <div class="about-photo-mock reveal">
+            <div class="photo-initials">CK</div>
+            <div class="photo-ring photo-ring-1"></div>
+            <div class="photo-ring photo-ring-2"></div>
+            <div class="photo-decorline"></div>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <p class="about-p reveal">
+            I'm a <strong>Technical Architect</strong> with over 6 years at L&Q Technologies, Bengaluru — specializing in designing production-grade AI/ML systems, cloud-native architectures, and full-stack platforms that scale.
+          </p>
+          <p class="about-p reveal">
+            My work sits at the intersection of <strong>applied research and real-world engineering</strong>: from fine-tuning LLMs and building MLOps pipelines to crafting microservice architectures and mentoring engineering teams.
+          </p>
+
+          <div class="about-pills reveal">
+            <span class="pill">Python</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">Java</span>
+            <span class="pill">Spring Boot</span>
+            <span class="pill">Angular</span>
+            <span class="pill">AWS</span>
+            <span class="pill">LLMs</span>
+            <span class="pill">MLOps</span>
+          </div>
+
+          <div class="cert-row reveal">
+            <div class="cert-icon-box">42001</div>
+            <div>
+              <div class="cert-name">ISO/IEC 42001:2023 Lead Implementer</div>
+              <div class="mono tiny" style="color:var(--ink-3)">AI Management System · Certified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS BENTO ===================== -->
+  <section class="bento-sec" id="stack">
+    <div class="bento-inner">
+      <div class="bento-tag mono reveal">Tech Stack</div>
+      <h2 class="bento-h2 reveal">What powers<br/><em>the work</em></h2>
+
+      <div class="bento-grid">
+
+        <div class="bento-card b-tall red-card reveal">
+          <div class="bento-num mono">01</div>
+          <h3>AI &amp; ML</h3>
+          <ul>
+            <li>Large Language Models</li>
+            <li>Computer Vision</li>
+            <li>NLP &amp; Speech AI</li>
+            <li>MLOps Pipelines</li>
+            <li>Model Fine-tuning</li>
+          </ul>
+          <div class="bento-bg-text">AI</div>
+        </div>
+
+        <div class="bento-card reveal">
+          <div class="bento-num mono">02</div>
+          <h3>Architecture</h3>
+          <ul>
+            <li>System Design</li>
+            <li>Microservices</li>
+            <li>Cloud-Native AWS</li>
+            <li>DevOps &amp; CI/CD</li>
+          </ul>
+        </div>
+
+        <div class="bento-card b-wide reveal">
+          <div class="bento-num mono">03</div>
+          <h3>Full Stack</h3>
+          <div class="stack-pills-row">
+            <span class="s-pill">Python</span>
+            <span class="s-pill">Node.js</span>
+            <span class="s-pill">Java</span>
+            <span class="s-pill">Spring Boot</span>
+            <span class="s-pill">Angular</span>
+            <span class="s-pill">REST APIs</span>
+            <span class="s-pill">GraphQL</span>
+          </div>
+        </div>
+
+        <div class="bento-card reveal">
+          <div class="bento-num mono">04</div>
+          <h3>Governance</h3>
+          <ul>
+            <li>AI Policy &amp; Ethics</li>
+            <li>ISO 42001 Standards</li>
+            <li>Responsible AI</li>
+          </ul>
+        </div>
+
+        <div class="bento-card edu-card reveal">
+          <div class="bento-num mono">EDU</div>
+          <div class="edu-entry">
+            <div class="edu-year mono">2024 – 2026</div>
+            <div class="edu-deg">MTech — AI/ML</div>
+            <div class="edu-school mono">BITS Pilani</div>
+          </div>
+          <div class="edu-divider"></div>
+          <div class="edu-entry">
+            <div class="edu-year mono">2015 – 2019</div>
+            <div class="edu-deg">BTech — CSE</div>
+            <div class="edu-school mono">KIST Bhubaneswar</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TIMELINE ===================== -->
+  <section class="timeline-sec" id="timeline">
+    <div class="timeline-inner">
+      <div class="timeline-tag mono reveal">Career Journey</div>
+      <h2 class="timeline-h2 reveal">6+ Years,<br /><em>One Company,</em><br />Three Levels.</h2>
+
+      <div class="tl-track">
+
+        <div class="tl-item reveal">
+          <div class="tl-year mono">2023 – Now</div>
+          <div class="tl-card tl-current">
+            <div class="tl-role-row">
+              <h3>Technical Architect</h3>
+              <span class="tl-live mono">● CURRENT</span>
+            </div>
+            <div class="tl-company mono">L&amp;Q Technologies · Bengaluru</div>
+            <p>Leading end-to-end architectural decisions across AI/ML products. Designing scalable, cloud-native systems. Establishing MLOps best practices and mentoring cross-functional engineering teams.</p>
+            <div class="tl-tags">
+              <span>AI/ML</span><span>Architecture</span><span>Cloud</span><span>Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-year mono">2022 – 2023</div>
+          <div class="tl-card">
+            <div class="tl-role-row">
+              <h3>Senior Software Engineer</h3>
+            </div>
+            <div class="tl-company mono">L&amp;Q Technologies · Bengaluru</div>
+            <p>Engineered and optimized ML-integrated software products. Owned full-stack delivery, performance engineering, and drove adoption of modern development practices.</p>
+            <div class="tl-tags">
+              <span>ML Integration</span><span>Full Stack</span><span>Performance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-year mono">2019 – 2022</div>
+          <div class="tl-card">
+            <div class="tl-role-row">
+              <h3>Software Engineer</h3>
+            </div>
+            <div class="tl-company mono">L&amp;Q Technologies · Bengaluru</div>
+            <p>Built core product features across full-stack applications. Contributed to early AI/ML tooling, establishing the foundation for the team's intelligent systems portfolio.</p>
+            <div class="tl-tags">
+              <span>Full Stack</span><span>AI Tooling</span><span>Product</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact-sec" id="contact">
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <div class="mono small" style="color:var(--ink-3); margin-bottom:1rem">Let's connect</div>
+        <h2 class="contact-h2">Ready to build<br /><em>something great?</em></h2>
+        <p class="contact-sub">Open for collaborations, architecture consulting, and conversations about the future of AI systems.</p>
+      </div>
+
+      <div class="contact-right reveal">
+        <a href="mailto:kumarchandrashekhar96@gmail.com" class="contact-card">
+          <div class="contact-icon">✉</div>
+          <div class="contact-info">
+            <div class="mono tiny" style="color:var(--ink-3)">Email</div>
+            <div class="contact-val">kumarchandrashekhar96@gmail.com</div>
+          </div>
+          <div class="contact-arrow">↗</div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/chandrashekhar-kumar" target="_blank" class="contact-card">
+          <div class="contact-icon">in</div>
+          <div class="contact-info">
+            <div class="mono tiny" style="color:var(--ink-3)">LinkedIn</div>
+            <div class="contact-val">chandrashekhar-kumar</div>
+          </div>
+          <div class="contact-arrow">↗</div>
+        </a>
+
+        <div class="contact-location">
+          <span class="loc-dot"></span>
+          <span class="mono small">Bengaluru, Karnataka, India</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <span class="mono tiny">© 2025 Chandrashekhar Kumar</span>
+    <span class="mono tiny footer-center">AI/ML Specialist · Technical Architect</span>
+    <span class="mono tiny">Built with precision.</span>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
